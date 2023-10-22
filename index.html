@@ -11,7 +11,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
   <link rel="shortcut icon" href="./utils/icon.png" type="image/png">
   <title>Hải Hồ & Quỳnh Lê</title>
-  <!-- <link rel="icon" type="image/x-icon" href=""> -->
 
   <meta name="description" content="Thiệp cưới Online của Chú rể Hải Hồ và Cô dâu Quỳnh Lê.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -4360,6 +4359,9 @@
         guestSideDiv.style.display = 'none';
         document.title = "Thân mời " + snapshot.val();
         document.querySelector('meta[property="og:title"]').setAttribute("content", "Thân mời " + snapshot.val());
+        const metas = Array.from(document.getElementsByTagName('meta'));
+        const metaTitle = metas.find((m) => m.attributes[0].nodeValue === 'og:title');
+        metaTitle.attributes[1].nodeValue = 'a title';
       }
     })
       .catch((error) => {
