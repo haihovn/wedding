@@ -61,6 +61,7 @@
   top: -254px;
   left: 0px;
   background-image: url("../galery/img_1.jpg");
+  background-position: center;
 }
 
 #IMAGE26>.ladi-image {
@@ -172,6 +173,7 @@
   top: 0px;
   left: 0px;
   background-image: url("../galery/img_8.jpg");
+  background-position: center;
 }
 
 #IMAGE53.ladi-animation>.ladi-image {
@@ -203,6 +205,7 @@
   top: -15.0917px;
   left: 0px;
   background-image: url("../galery/img_1.jpg");
+  background-position: center;
 }
 
 #IMAGE42.ladi-animation>.ladi-image {
@@ -224,7 +227,7 @@
 #IMAGE40 {
   width: 31%;
   height: 179.953px;
-  top: 320.988px;
+  top: 319.988px;
   left: 10.0px;
 }
 
@@ -234,6 +237,7 @@
   top: 0px;
   left: 0px;
   background-image: url("../galery/img_9.jpg");
+  background-position: center;
 }
 
 #IMAGE40.ladi-animation>.ladi-image {
@@ -265,6 +269,7 @@
   top: 0px;
   left: 0px;
   background-image: url("../galery/img_4.jpg");
+  background-position: center;
 }
 
 #IMAGE45.ladi-animation>.ladi-image {
@@ -296,6 +301,7 @@
   top: 0px;
   left: 0px;
   background-image: url("../galery/img_3.jpg");
+  background-position: center;
 }
 
 #IMAGE44.ladi-animation>.ladi-image {
@@ -327,6 +333,7 @@
   top: 0px;
   left: 0px;
   background-image: url("../galery/img_6.jpg");
+  background-position: center;
 }
 
 #IMAGE47.ladi-animation>.ladi-image {
@@ -372,6 +379,7 @@
   top: 0px;
   left: 0px;
   background-image: url("../galery/img_2.jpg");
+  background-position: center;
 }
 
 #IMAGE43.ladi-animation>.ladi-image {
@@ -403,6 +411,7 @@
   top: 0px;
   left: 0px;
   background-image: url("../galery/img_5.jpg");
+  background-position: center;
 }
 
 #IMAGE46.ladi-animation>.ladi-image {
@@ -434,6 +443,7 @@
   top: 0px;
   left: 0px;
   background-image: url("../galery/img_7.jpg");
+  background-position: center;
 }
 
 #IMAGE49.ladi-animation>.ladi-image {
