@@ -4186,6 +4186,7 @@
   <script src="./utils/jstz.min.js"></script>
   <script type="text/javascript">
     $('#option-1boxp').click();
+    $('label[for="option-1"]').click();
     let tz = jstz.determine();
     let htmlx = $(".addevent").attr('data-event');
     let nametxx = '';
@@ -4304,6 +4305,11 @@
 
     function InsertData() {
       var val_num = $('select[id="num_of_participants"]').val();
+      var bride_friend = $('label[for="option-1"]').hasClass('activep');
+      const params = new Proxy(new URLSearchParams(window.location.search), {
+        get: (searchParams, prop) => searchParams.get(prop),
+      });
+      let guest_code = params.guest;
       console.log(guest_code);
       if (guest_code === null) {
         var name = guestNameInp.value;
@@ -4312,7 +4318,7 @@
         var name = guestNameText.innerHTML;
       }
       if (name === '' || name === null) {
-        alert("Please enter your name!");
+        alert("Nhập tên khách mời!");
       } else {
         if ($(".option-3boxp").hasClass('activep')) {
           val_num = 0;
@@ -4328,10 +4334,11 @@
           closeOnCancel: true,
         }, function (isConfirm) {
             let valxxx = document.getElementById('text-rsvp').value;
-            set(ref(db, "Guests/" + guest_code), {
+            set(ref(db, "GuestResponses/" + guest_code), {
               "num_of_participant": val_num,
               "guest_name": name,
-              "mess": valxxx
+              "mess": valxxx,
+              "bride_friend": bride_friend
             })
             .then(() => {
               alert("Lời yêu thương đã được gửi đi");
@@ -4353,15 +4360,20 @@
     get(child(dbref, "Guest/" + guest_code)).then((snapshot) => {
       console.log(snapshot.val());
       if (snapshot.exists()) {
-        guestNameText.innerHTML = snapshot.val();
+        var name = snapshot.val().name;
+        var brideFriend = snapshot.val().bride_friend;
+        guestNameText.innerHTML = name;
         guestNameText.style.display = null;
         guestNameInp.style.display = 'none';
         guestSideDiv.style.display = 'none';
-        document.title = "Thân mời " + snapshot.val();
-        document.querySelector('meta[property="og:title"]').setAttribute("content", "Thân mời " + snapshot.val());
+        document.title = "Thân mời " + name;
+        document.querySelector('meta[property="og:title"]').setAttribute("content", "Thân mời " + name);
         const metas = Array.from(document.getElementsByTagName('meta'));
         const metaTitle = metas.find((m) => m.attributes[0].nodeValue === 'og:title');
         metaTitle.attributes[1].nodeValue = 'a title';
+        if (brideFriend === false) {
+          $('label[for="option-2"]').click();
+        }
       }
     })
       .catch((error) => {
