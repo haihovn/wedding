@@ -160,14 +160,14 @@
   background-image: url("https://w.ladicdn.com/s400x350/5c7362c6c417ab07e5196b05/r5gt-20201125032553.png");
 }
 
-#IMAGE53 {
+#IMAGE13 {
   width: 64%;
   height: 367.092px;
   top: 139.317px;
   left: 34%;
 }
 
-#IMAGE53>.ladi-image>.ladi-image-background {
+#IMAGE13>.ladi-image>.ladi-image-background {
   width: 100%;
   height: 360.603px;
   top: 0px;
@@ -176,7 +176,7 @@
   background-position: center;
 }
 
-#IMAGE53.ladi-animation>.ladi-image {
+#IMAGE13.ladi-animation>.ladi-image {
   animation-name: fadeInRight;
   -webkit-animation-name: fadeInRight;
   animation-delay: 0.2s;
@@ -187,19 +187,19 @@
   -webkit-animation-iteration-count: 1;
 }
 
-#IMAGE53:hover>.ladi-image {
+#IMAGE13:hover>.ladi-image {
   transform: scale(1.03);
   -webkit-transform: scale(1.03);
 }
 
-#IMAGE42 {
+#IMAGE11 {
   width: 31%;
   height: 179.953px;
   top: 139.317px;
   left: 10px;
 }
 
-#IMAGE42>.ladi-image>.ladi-image-background {
+#IMAGE11>.ladi-image>.ladi-image-background {
   width: 100%;
   height: 190.045px;
   top: -15.0917px;
@@ -208,7 +208,7 @@
   background-position: center;
 }
 
-#IMAGE42.ladi-animation>.ladi-image {
+#IMAGE11.ladi-animation>.ladi-image {
   animation-name: fadeInDown;
   -webkit-animation-name: fadeInDown;
   animation-delay: 0.2s;
@@ -219,19 +219,19 @@
   -webkit-animation-iteration-count: 1;
 }
 
-#IMAGE42:hover>.ladi-image {
+#IMAGE11:hover>.ladi-image {
   transform: scale(1.03);
   -webkit-transform: scale(1.03);
 }
 
-#IMAGE40 {
+#IMAGE12 {
   width: 31%;
   height: 179.953px;
   top: 319.988px;
   left: 10.0px;
 }
 
-#IMAGE40>.ladi-image>.ladi-image-background {
+#IMAGE12>.ladi-image>.ladi-image-background {
   width: 100%;
   height: 190.961px;
   top: 0px;
@@ -240,7 +240,7 @@
   background-position: center;
 }
 
-#IMAGE40.ladi-animation>.ladi-image {
+#IMAGE12.ladi-animation>.ladi-image {
   animation-name: fadeInLeft;
   -webkit-animation-name: fadeInLeft;
   animation-delay: 0.2s;
@@ -251,19 +251,19 @@
   -webkit-animation-iteration-count: 1;
 }
 
-#IMAGE40:hover>.ladi-image {
+#IMAGE12:hover>.ladi-image {
   transform: scale(1.03);
   -webkit-transform: scale(1.03);
 }
 
-#IMAGE45 {
+#IMAGE21 {
   width: 64%;
   height: 404px;
   top: 507.6px;
   left: 9.83px;
 }
 
-#IMAGE45>.ladi-image>.ladi-image-background {
+#IMAGE21>.ladi-image>.ladi-image-background {
   width: 100%;
   height: 404px;
   top: 0px;
@@ -272,7 +272,7 @@
   background-position: center;
 }
 
-#IMAGE45.ladi-animation>.ladi-image {
+#IMAGE21.ladi-animation>.ladi-image {
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
   animation-delay: 0.2s;
@@ -283,19 +283,19 @@
   -webkit-animation-iteration-count: 1;
 }
 
-#IMAGE45:hover>.ladi-image {
+#IMAGE21:hover>.ladi-image {
   transform: scale(1.03);
   -webkit-transform: scale(1.03);
 }
 
-#IMAGE44 {
+#IMAGE22 {
   width: 31%;
   height: 204.56px;
   top: 507.6px;
   left: 67%;
 }
 
-#IMAGE44>.ladi-image>.ladi-image-background {
+#IMAGE22>.ladi-image>.ladi-image-background {
   width: 100%;
   height: 204.56px;
   top: 0px;
@@ -304,7 +304,7 @@
   background-position: center;
 }
 
-#IMAGE44.ladi-animation>.ladi-image {
+#IMAGE22.ladi-animation>.ladi-image {
   animation-name: fadeInLeft;
   -webkit-animation-name: fadeInLeft;
   animation-delay: 0.2s;
@@ -315,19 +315,19 @@
   -webkit-animation-iteration-count: 1;
 }
 
-#IMAGE44:hover>.ladi-image {
+#IMAGE22:hover>.ladi-image {
   transform: scale(1.03);
   -webkit-transform: scale(1.03);
 }
 
-#IMAGE47 {
+#IMAGE23 {
   width: 31%;
   height: 188.305px;
   top: 723.295px;
   left: 67%;
 }
 
-#IMAGE47>.ladi-image>.ladi-image-background {
+#IMAGE23>.ladi-image>.ladi-image-background {
   width: 100%;
   height: 188.305px;
   top: 0px;
@@ -336,7 +336,7 @@
   background-position: center;
 }
 
-#IMAGE47.ladi-animation>.ladi-image {
+#IMAGE23.ladi-animation>.ladi-image {
   animation-name: fadeInRight;
   -webkit-animation-name: fadeInRight;
   animation-delay: 0.2s;
@@ -347,7 +347,7 @@
   -webkit-animation-iteration-count: 1;
 }
 
-#IMAGE47:hover>.ladi-image {
+#IMAGE23:hover>.ladi-image {
   transform: scale(1.03);
   -webkit-transform: scale(1.03);
 }
@@ -366,14 +366,14 @@
   border-width: 8px;
 }
 
-#IMAGE43 {
+#IMAGE31 {
   width: 31%;
   height: 184.143px;
   top: 918.457px;
   left: 2%;
 }
 
-#IMAGE43>.ladi-image>.ladi-image-background {
+#IMAGE31>.ladi-image>.ladi-image-background {
   width: 100%;
   height: 184.143px;
   top: 0px;
@@ -382,7 +382,7 @@
   background-position: center;
 }
 
-#IMAGE43.ladi-animation>.ladi-image {
+#IMAGE31.ladi-animation>.ladi-image {
   animation-name: fadeInLeft;
   -webkit-animation-name: fadeInLeft;
   animation-delay: 0.2s;
@@ -393,19 +393,19 @@
   -webkit-animation-iteration-count: 1;
 }
 
-#IMAGE43:hover>.ladi-image {
+#IMAGE31:hover>.ladi-image {
   transform: scale(1.03);
   -webkit-transform: scale(1.03);
 }
 
-#IMAGE46 {
+#IMAGE32 {
   width: 31%;
   height: 182.608px;
   top: 918.457px;
   left: 35%;
 }
 
-#IMAGE46>.ladi-image>.ladi-image-background {
+#IMAGE32>.ladi-image>.ladi-image-background {
   width: 100%;
   height: 182.608px;
   top: 0px;
@@ -414,7 +414,7 @@
   background-position: center;
 }
 
-#IMAGE46.ladi-animation>.ladi-image {
+#IMAGE32.ladi-animation>.ladi-image {
   animation-name: fadeInRight;
   -webkit-animation-name: fadeInRight;
   animation-delay: 0.2s;
@@ -425,19 +425,19 @@
   -webkit-animation-iteration-count: 1;
 }
 
-#IMAGE46:hover>.ladi-image {
+#IMAGE32:hover>.ladi-image {
   transform: scale(1.03);
   -webkit-transform: scale(1.03);
 }
 
-#IMAGE49 {
+#IMAGE33 {
   width: 31%;
   height: 184.143px;
   top: 918.457px;
   left: 67%;
 }
 
-#IMAGE49>.ladi-image>.ladi-image-background {
+#IMAGE33>.ladi-image>.ladi-image-background {
   width: 100%;
   height: 184.143px;
   top: 0px;
@@ -446,7 +446,7 @@
   background-position: center;
 }
 
-#IMAGE49.ladi-animation>.ladi-image {
+#IMAGE33.ladi-animation>.ladi-image {
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
   animation-delay: 0.2s;
@@ -457,7 +457,7 @@
   -webkit-animation-iteration-count: 1;
 }
 
-#IMAGE49:hover>.ladi-image {
+#IMAGE33:hover>.ladi-image {
   transform: scale(1.03);
   -webkit-transform: scale(1.03);
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="mdl-js">
+<html>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
@@ -21,7 +21,6 @@
     <meta name="twitter:title" content="Thân mời Quý Khách">
     <meta name="twitter:description" content="Thiệp cưới Online của Chú rể Hải Hồ và Cô dâu Quỳnh Lê.">
     <meta name="csrf-token" content="ADaDXQD6mRBVErEJOOFrMFOYAkmWshGFQJaoW7xt">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <style type="text/css">
         .table-row {
@@ -31,6 +30,14 @@
 </head>
 
 <body>
+    <!-- <iframe src="/music/lover.mp3" allow="autoplay" id="audio"></iframe> -->
+    <audio id="myAudio" autoplay loop>
+        <source 
+        src="/music/lover.mp3"
+        type="audio/mp3">
+    </audio>
+    
+    </iframe> 
     <table id="friend-list">
         <button id="add-friend">Add new friend</button>
         <tr class="table-row">
@@ -266,6 +273,11 @@
         var addFriendBtn = document.getElementById("add-friend");
         addFriendBtn.addEventListener('click', myCreateFunction)
     </script>
+    <script type="text/javascript">
+        var x = document.getElementById("myAudio");
+        x.autoplay = true;
+        x.load();
+      </script>
 </body>
 
 </html>

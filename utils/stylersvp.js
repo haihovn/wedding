@@ -444,16 +444,16 @@ $('.gla_music_icon').on('click', function () {
 });
 
 
-let audio = document.getElementById("audio");
-// $(document).ready(function(){
-//     let audio = document.getElementById("audio");
-//     //console.log(audio);
-//     if(audio){
-//         audio.play().then(()=>audio.pause());
-//         // now we can do whatever we want at any time with this MediaElement
-//         setTimeout(()=> audio.play(), 3000);
-//     }
-// });
+let audio = document.getElementById("myAudio");
+$(document).ready(function(){
+    let audio = document.getElementById("myAudio");
+    //console.log(audio);
+    if(audio){
+        audio.play().then(()=>audio.pause());
+        // now we can do whatever we want at any time with this MediaElement
+        setTimeout(()=> audio.play(), 3000);
+    }
+});
 $(".btn-play-audio").on('click', function () {
 
     if ($(".btn-play-audio").find(".fa").hasClass('after-slash')) {
