@@ -1754,6 +1754,24 @@
       }
     }
   </style>
+  <style type="text/css">
+    @font-face {
+        font-family: "My Custom Font";
+        src: url('/utils/name_font.otf') format("truetype");
+    }
+    div.guess_name { 
+        font-family: "My Custom Font", Verdana, Tahoma;
+        position: absolute;
+        top: 300px;
+        left: 0px;
+        font-size: 30px;
+        background-color: white;
+        color: #853d0d;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+    }
+  </style>
   <style>
     @-webkit-keyframes swal2-show {
       0% {
@@ -3715,7 +3733,7 @@
         <img src="./utils/wedding_cover.gif">
       </div>
 
-      <div>
+      <div class="mt-40">
         <img src="./utils/wedding_page_2.png">
       </div>
       <!-- ---------------------------------------------   -->
@@ -3797,12 +3815,22 @@
         </div>
       </div>
 
-      <div class=" mt-80  ">
-        <img src="./utils/wedding_page_3.png">
+      <div class="mt-80" style="position: relative;
+      top: 0;
+      left: 0;">
+        <img src="./utils/wedding_page_3.png" style="position: relative;
+        top: 0;
+        left: 0;">
+        <img src="./utils/wedding_page_4.png" style="position: relative;
+        top: 0;
+        left: 0;">
+        <div class="guess_name">
+          Quý Khách
+        </div>
       </div>
 
 
-      <div class="count-time-date mt-80">
+      <div class="count-time-date mt-40">
         <div>
           <h4 class="text-center">Mình cùng đếm ngược thời gian</h4>
         </div>
@@ -4181,7 +4209,7 @@
         <h3 class="text-center">Chia sẻ thiệp</h3>
       </div>
 
-      <div class="text-center mrt20">
+      <div class="text-center mrt20 box-tk">
         <div data-label="Social Share" data-key="social-share" data-atomgroup="module" id="m-1639535856637"
           class="module-wrap" data-icon="eicon-social-icons" data-ver="1.0" data-id="1639535856637">
           <div class="module gf_module-center gf_module-center-lg gf_module--md gf_module--sm gf_module--xs "
@@ -4384,6 +4412,7 @@
 
     var insBtn = document.getElementById("Layer_1");
     var guestNameText = document.getElementById("guest_name");
+    var guestNameCard = document.getElementsByClassName("guess_name")[0];
     var guestNameInp = document.getElementById("guest_name_inp");
     var guestSideDiv = document.getElementById("guest_side");
 
@@ -4458,7 +4487,9 @@
         var name = snapshot.val().name;
         var brideFriend = snapshot.val().bride_friend;
         guestNameText.innerHTML = name;
+        guestNameCard.innerHTML = name;
         guestNameText.style.display = null;
+        guestNameCard.style.display = null;
         guestNameInp.style.display = 'none';
         guestSideDiv.style.display = 'none';
         document.title = "Thân mời " + name;
