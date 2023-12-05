@@ -33,12 +33,14 @@
 </head>
 
 <body>
-    
-    </iframe> 
-    <table id="friend-list">
+
+    </iframe>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+    <table id="friend-list" class="myTable">
         <button id="add-friend">Add new friend</button>
         <button id="save-all">Save all changes</button>
-        
+
+
         <tr class="table-header">
             <th>Code</th>
             <th>Name</th>
@@ -46,6 +48,27 @@
             <th>URL</th>
         </tr>
     </table>
+
+    <script>
+        function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementsByClassName("myTable")[0];
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[1];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
 
     <script type="module" id="firebase-module">
         var host = "https://wedding-seven-alpha.vercel.app/?guest=";
@@ -80,12 +103,12 @@
                 // console.log(value)
                 var detail = value.children
                 var friend_code = detail[0].innerHTML;
-                var friend_name = detail[1].innerHTML.includes('<input')?$(detail[1]).children('input').val():detail[1].innerHTML;
-                var bride_friend = detail[2].innerHTML.includes('<select')?$(detail[2]).children('select').val():detail[2].innerHTML;
-                
+                var friend_name = detail[1].innerHTML.includes('<input') ? $(detail[1]).children('input').val() : detail[1].innerHTML;
+                var bride_friend = detail[2].innerHTML.includes('<select') ? $(detail[2]).children('select').val() : detail[2].innerHTML;
+
                 set(ref(db, "Guest/" + friend_code), {
-                "name": friend_name,
-                "bride_friend": bride_friend
+                    "name": friend_name,
+                    "bride_friend": bride_friend
                 })
             }
             alert("thông tin khách đã được cập nhật");
