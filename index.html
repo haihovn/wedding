@@ -1757,16 +1757,18 @@
   <style type="text/css">
     @font-face {
         font-family: "My Custom Font";
-        src: url('/utils/name_font.otf') format("truetype");
+      font-family: "My Custom Font";
+      src: url('/utils/name_font.otf') format("truetype");
     }
-    div.guest_name_card { 
-        font-family: "My Custom Font", Verdana, Tahoma;
-        left: 0px;
-        font-size: 30px;
-        color: #853d0d;
-        width: 100%;
-        text-align: center;
-        font-weight: bold;
+
+    div.guest_name_card {
+      font-family: "My Custom Font", Verdana, Tahoma;
+      left: 0px;
+      font-size: 30px;
+      color: #853d0d;
+      width: 100%;
+      text-align: center;
+      font-weight: bold;
     }
   </style>
   <style>
@@ -4107,7 +4109,7 @@
         </div>
 
         <div class="text-center mt-40 mb-20">
-          <h3>Send a gift to the couple</h3>
+          <h3>Gửi quà yêu thương đến Hải - Quỳnh</h3>
         </div>
         <div class="stk text-center">
           <div class="box-imgvqr"><img src="https://img.vietqr.io/image/VCB-0161001602963-compact.png"></div>
@@ -4147,28 +4149,28 @@
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.547984513965!2d106.69074697498186!3d10.769277489379055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fc8702ecc0b%3A0x4e830dc2c0483582!2sDaybyDay%20-%20Kitchen%20%26%20Bar!5e0!3m2!1svi!2s!4v1697330594394!5m2!1svi!2s"
           width="100%" height="350" style="border:0;" allowfullscreen="" lazy
           referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
-      <div id="SECTION6" class="ladi-section">
-        <div class="ladi-section-background ladi-lazyload"></div>
-        <div class="ladi-container">
-          <div data-action="true" id="IMAGE41" class="ladi-element ladi-animation-hidden">
-            <div class="ladi-image ladi-transition">
-              <div class="ladi-image-background ladi-lazyload"></div>
+
+        <div id="SECTION6" class="ladi-section">
+          <div class="ladi-section-background ladi-lazyload"></div>
+          <div class="ladi-container">
+            <div data-action="true" id="IMAGE41" class="ladi-element ladi-animation-hidden">
+              <div class="ladi-image ladi-transition">
+                <div class="ladi-image-background ladi-lazyload"></div>
+              </div>
             </div>
-          </div>
-          <div data-action="true" id="IMAGE42" class="ladi-element ladi-animation-hidden">
-            <div class="ladi-image ladi-transition">
-              <div class="ladi-image-background ladi-lazyload"></div>
+            <div data-action="true" id="IMAGE42" class="ladi-element ladi-animation-hidden">
+              <div class="ladi-image ladi-transition">
+                <div class="ladi-image-background ladi-lazyload"></div>
+              </div>
             </div>
-          </div>
-          
-          <div data-action="true" id="IMAGE43" class="ladi-element ladi-animation-hidden">
-            <div class="ladi-image ladi-transition">
-              <div class="ladi-image-background ladi-lazyload"></div>
+
+            <div data-action="true" id="IMAGE43" class="ladi-element ladi-animation-hidden">
+              <div class="ladi-image ladi-transition">
+                <div class="ladi-image-background ladi-lazyload"></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
         <!-- Happy Land -->
         <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.547984513965!2d106.69074697498182!3d10.769277489379055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fc8702ecc0b%3A0x4e830dc2c0483582!2sDaybyDay%20-%20Kitchen%20%26%20Bar!5e0!3m2!1svi!2s!4v1700219056233!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
@@ -4291,7 +4293,7 @@
   <script src="./utils/script.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="./utils/slick.min.js"></script>
-  
+
   <script src="./utils/addtocalendar.min.js"></script>
   <!-- <script type="text/javascript" src="template-thiep/thiep-cuoi-1/js/style.js"></script> -->
 
@@ -4442,7 +4444,7 @@
 
         swal({
           title: "",
-          text: "<div class='text-left'>Gửi lời nhắn hoặc lời chúc</div><textarea id='text-rsvp' class='form-control' rows='5'></textarea>",
+          text: "<div class='text-left'>Gửi lời nhắn hoặc lời chúc</div><textarea id='text-rsvp' class='form-control' placeholder='Gửi lời chúc đến Hải - Quỳnh...'  rows='5'></textarea>",
           html: true,
           showCancelButton: false,
           confirmButtonText: 'Gửi đi',
@@ -4457,11 +4459,24 @@
             "bride_friend": bride_friend
           })
             .then(() => {
-              alert("Lời yêu thương đã được gửi đi");
+              setTimeout(function () {
+                swal({
+                  title: "Lời yêu thương đã được gửi đi!",
+                  text: "Hải và Quỳnh cảm ơn " + name + " đã phản hồi!",
+                  type: "success",
+                  confirmButtonText: "OK"
+                });
+              }, 10);
             })
             .catch((error) => {
               alert("unsuccessful, error" + error);
             });
+
+        }).then(function () {
+          $timeout(function () { SweetAlert.error('Erro'); }, 1)
+          setTimeout(function () {
+            content.style.display = "block";
+          }, 5000);
         });
 
       }
