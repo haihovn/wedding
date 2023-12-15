@@ -444,9 +444,9 @@ $('.gla_music_icon').on('click', function () {
 });
 
 
-let audio = document.getElementById("myAudio");
+let audio = document.getElementById("audio");
 $(document).ready(function(){
-    let audio = document.getElementById("myAudio");
+    let audio = document.getElementById("audio");
     //console.log(audio);
     if(audio){
         audio.play().then(()=>audio.pause());
@@ -458,9 +458,11 @@ $(".btn-play-audio").on('click', function () {
 
     if ($(".btn-play-audio").find(".fa").hasClass('after-slash')) {
         $(".btn-play-audio").find(".fa").removeClass('after-slash');
+        audio.volume = 0.1;
         audio.play()
     } else {
         $(".btn-play-audio").find(".fa").addClass('after-slash');
+        audio.volume = 0.1;
         audio.pause();
     }
 });
